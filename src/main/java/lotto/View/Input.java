@@ -1,4 +1,5 @@
-package lotto.Veiw;
+package lotto.View;
 
 public class Input {
+
 }
