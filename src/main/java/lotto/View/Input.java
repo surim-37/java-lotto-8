@@ -1,6 +1,8 @@
 package lotto.View;
 
 import camp.nextstep.edu.missionutils.Console;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Input {
 
@@ -19,23 +21,21 @@ public class Input {
         }
     }
 
-    public String inputWinningNumbers() {
-        System.out.println("당첨 번호를 입력해 주세요. (쉼표로 구분 없이 그냥 숫자 나열)");
+    public List<Integer> inputWinningNumbers() {
+        System.out.println("당첨 번호를 입력해 주세요.");
 
         String input = Console.readLine();
+        if (!input.contains(",")) {
+            throw new IllegalArgumentException("[ERROR] 번호는 쉼표(,)로 구분해서 입력해야 합니다.");
+        }
+        List<Integer> numbers = new ArrayList<>();
+        String[] parts = input.split(",");
 
-        if (input.length() != 6) {
-            throw new IllegalArgumentException("[ERROR] 로또 번호는 정확히 6자리여야 합니다.");
+        for (String part : parts) {
+            numbers.add(Integer.parseInt(part.trim()));
         }
 
-        for (int i = 0; i < input.length(); i++) {
-            char c = input.charAt(i);
-            if (c < '0' || c > '9') {
-                throw new IllegalArgumentException("[ERROR] 숫자만 입력해야 합니다.");
-            }
-        }
-
-        return input;
+        return numbers;
     }
 
     public int inputBonusNumber() {
