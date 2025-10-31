@@ -5,7 +5,6 @@ import lotto.Model.LottoResult;
 import lotto.Model.Rank;
 import java.util.List;
 
-
 public class Output {
 
     public void printLottos(List<Lotto> lottos) {
