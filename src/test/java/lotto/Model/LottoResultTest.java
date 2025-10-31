@@ -21,7 +21,7 @@ class LottoResultTest {
     void 수익률_계산_정확() {
         LottoResult result = new LottoResult();
         result.addResult(Rank.First); // 20억
-        double rate = result.calculateProfit(1000_0);
+        double rate = result.calculateProfit(100_000);
         assertThat(rate).isEqualTo(2_000_000.0);
     }
 }
