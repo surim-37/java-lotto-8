@@ -5,7 +5,7 @@ import static org.assertj.core.api.Assertions.*;
 
 public class InputTest {@Test
 void 구입금액_예외() {
-    InputTest input = new InputTest();
+    Input input = new Input();
     assertThatThrownBy(() -> input.validateMoney(1500))
             .isInstanceOf(IllegalArgumentException.class);
 }
