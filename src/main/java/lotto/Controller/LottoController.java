@@ -17,7 +17,7 @@ public class LottoController {
         output.printLottos(lottos);
         List<Integer> winning = input.inputWinningNumbers();
 
-        int bonus = input.inputBonusNumber();
+        int bonus = input.inputBonusNumber(winning);
         LottoResult result = new LottoResult();
 
         for (Lotto lotto : lottos) {
