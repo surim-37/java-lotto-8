@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## **구성**
 
 ##### Main: 프로그램 시작
@@ -88,3 +89,6 @@
 
 
 
+=======
+# java-lotto-precourse
+>>>>>>> 99b1964 (feat: setup project)
