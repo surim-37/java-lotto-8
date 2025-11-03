@@ -6,6 +6,12 @@ import java.util.List;
 
 public class Input {
 
+    public void validateMoney(int money) {
+        if (money % 1000 != 0) {
+            throw new IllegalArgumentException("1000원 단위로 입력해야 합니다.");
+        }
+    }
+
     public int inputMoney() {
         while (true) {
             System.out.println("구입금액을 입력해 주세요.");
