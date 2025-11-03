@@ -25,10 +25,4 @@ class LottoResultTest {
         assertThat(rate).isEqualTo(2_000_000.0);
     }
 }
-<<<<<<< HEAD
 
-
-
-
-=======
->>>>>>> 176c73aaada6fcc3e14835aaad8f887854de8ef6

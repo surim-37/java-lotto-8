@@ -54,14 +54,4 @@ public class ControllerTest {
 
         assertThat(profit).isGreaterThanOrEqualTo(0.0);
     }
-<<<<<<< HEAD
-}
-
-
-double profit = result.calculateProfit(money);
-
-        assertThat(profit).isGreaterThanOrEqualTo(0.0);
-    }
-=======
->>>>>>> 176c73aaada6fcc3e14835aaad8f887854de8ef6
 }
