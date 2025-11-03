@@ -2,6 +2,7 @@ package lotto.Controller;
 
 import lotto.Model.*;
 import lotto.View.*;
+import java.util.ArrayList;
 import java.util.List;
 
 public class LottoController {
@@ -11,11 +12,11 @@ public class LottoController {
     private final LottoMachine machine = new LottoMachine();
 
     public void run() {
-
         int money = input.inputMoney();
         List<Lotto> lottos = machine.generateLottos(money);
         output.printLottos(lottos);
-        List<Integer> winning = input.inputWinningNumbers();
+
+        List<Integer> winning = new ArrayList<>(input.inputWinningNumbers());
 
         int bonus = input.inputBonusNumber(winning);
         LottoResult result = new LottoResult();
@@ -28,11 +29,6 @@ public class LottoController {
         }
 
         double profit = result.calculateProfit(money);
-
         output.printResult(result, profit);
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 176c73aaada6fcc3e14835aaad8f887854de8ef6

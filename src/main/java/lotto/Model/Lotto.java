@@ -29,8 +29,4 @@ public class Lotto {
     public List<Integer> getNumbers() {
         return numbers;
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 176c73aaada6fcc3e14835aaad8f887854de8ef6
