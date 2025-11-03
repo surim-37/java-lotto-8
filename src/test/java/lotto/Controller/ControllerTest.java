@@ -55,3 +55,10 @@ public class ControllerTest {
         assertThat(profit).isGreaterThanOrEqualTo(0.0);
     }
 }
+
+
+double profit = result.calculateProfit(money);
+
+        assertThat(profit).isGreaterThanOrEqualTo(0.0);
+    }
+}

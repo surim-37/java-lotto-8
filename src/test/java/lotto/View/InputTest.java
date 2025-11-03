@@ -10,4 +10,3 @@ void 구입금액_예외() {
             .isInstanceOf(IllegalArgumentException.class);
 }
 }
-
